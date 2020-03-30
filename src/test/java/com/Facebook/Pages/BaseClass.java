@@ -18,19 +18,16 @@ public class BaseClass {
 	
 	
 	@BeforeSuite
-	public void ojectRepository()
-	{
-		excel=new ExcelDataReader();
-	}
-	@BeforeClass
 	public void setUpBrowser() 
 	{   
+		excel=new ExcelDataReader();
+		
 		ConfigDataReader ConfigRead=new ConfigDataReader();
 		
 	    driver = BrowserSelector.startBrowser(ConfigRead.getPro().getProperty("Browser"));
 	}
 
-	//@AfterClass
+	@AfterSuite
 	public void closeBrowser() {
 
 		BrowserSelector.quitBrowser(driver);

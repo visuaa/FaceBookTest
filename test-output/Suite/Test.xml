@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite hostname="DESKTOP-U7TQIQO" name="com.Facebook.testCases.LoginTest" tests="1" failures="0" timestamp="29 Mar 2020 05:35:27 GMT" time="23.732" errors="0">
-  <testcase name="facebookLoginTest" time="0.659" classname="com.Facebook.testCases.LoginTest"/>
+<testsuite hostname="DESKTOP-U7TQIQO" name="com.Facebook.testCases.Addingpost" tests="1" failures="0" timestamp="30 Mar 2020 11:07:08 GMT" time="26.324" errors="0">
+  <testcase name="postingOnFaceebook" time="26.323" classname="com.Facebook.testCases.Addingpost"/>
 </testsuite>

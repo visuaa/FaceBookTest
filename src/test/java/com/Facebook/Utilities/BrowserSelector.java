@@ -2,6 +2,7 @@ package com.Facebook.Utilities;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class BrowserSelector {
@@ -13,7 +14,9 @@ public class BrowserSelector {
 		if (browserName.equalsIgnoreCase("Chrome")) {
 			System.setProperty("webdriver.chrome.driver",
 					System.getProperty("user.dir") + "//Drivers//chromedriver.exe");
-			driver = new ChromeDriver();
+            ChromeOptions option=new ChromeOptions();
+		    option.addArguments("--disable-notifications");
+			driver = new ChromeDriver(option);
 
 		} else if (browserName.equalsIgnoreCase("firefox")) {
 			System.setProperty("webdriver.gecko.driver",

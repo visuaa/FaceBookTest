@@ -5,9 +5,10 @@
     <classes>
       <class name="com.Facebook.testCases.LoginTest">
         <methods>
-          <include name="facebookLoginTest"/>
+          <include name="facebookLoginTest" invocation-numbers="0"/>
           <include name="setUpBrowser"/>
           <include name="closeBrowser"/>
+          <include name="tearDownMethod"/>
         </methods>
       </class>
     </classes>

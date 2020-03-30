@@ -48,14 +48,10 @@ public class LoginPage {
 		Password.sendKeys(pass);
 
 		LogIN_Button.click();
-		
-		System.out.println(driver.getCurrentUrl());
-		
-		System.out.println(driver.getTitle());
-		
+
 		final String expectedTitle="Facebook";
 		
-		WebDriverWait wait = new WebDriverWait(driver, 15);
+		WebDriverWait wait = new WebDriverWait(driver,100);
 		  
 		wait.until(ExpectedConditions.titleContains("Facebook"));
 		  

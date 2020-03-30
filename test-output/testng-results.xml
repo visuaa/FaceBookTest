@@ -1,17 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="2" passed="1">
+<testng-results skipped="0" failed="1" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="46016" started-at="2020-03-29T22:55:39Z" finished-at="2020-03-29T22:56:25Z">
+  <suite name="Suite" duration-ms="26324" started-at="2020-03-30T16:36:42Z" finished-at="2020-03-30T16:37:08Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="46016" started-at="2020-03-29T22:55:39Z" finished-at="2020-03-29T22:56:25Z">
+    <test name="Test" duration-ms="26324" started-at="2020-03-30T16:36:42Z" finished-at="2020-03-30T16:37:08Z">
+      <class name="com.Facebook.testCases.Addingpost">
+        <test-method status="PASS" signature="setUpBrowser()" name="setUpBrowser" is-config="true" duration-ms="5404" started-at="2020-03-30T16:36:36Z" finished-at="2020-03-30T16:36:42Z">
+        </test-method>
+        <test-method status="PASS" signature="postingOnFaceebook()" name="postingOnFaceebook" duration-ms="26323" started-at="2020-03-30T16:36:42Z" finished-at="2020-03-30T16:37:08Z">
+        </test-method>
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)" name="tearDownMethod" is-config="true" duration-ms="0" started-at="2020-03-30T16:37:08Z" finished-at="2020-03-30T16:37:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult: postingOnFaceebook STATUS:SUCCESS METHOD:com.Facebook.testCases.Addingpost.postingOnFaceebook()]
+]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="closeBrowser()" name="closeBrowser" is-config="true" duration-ms="1081" started-at="2020-03-30T16:37:08Z" finished-at="2020-03-30T16:37:09Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+  <suite name="Suite" duration-ms="53654" started-at="2020-03-30T16:35:42Z" finished-at="2020-03-30T16:36:35Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="53654" started-at="2020-03-30T16:35:42Z" finished-at="2020-03-30T16:36:35Z">
       <class name="com.Facebook.testCases.LoginTest">
-        <test-method status="PASS" signature="ojectRepository()" name="ojectRepository" is-config="true" duration-ms="646" started-at="2020-03-29T22:55:38Z" finished-at="2020-03-29T22:55:39Z">
+        <test-method status="PASS" signature="setUpBrowser()" name="setUpBrowser" is-config="true" duration-ms="7364" started-at="2020-03-30T16:35:34Z" finished-at="2020-03-30T16:35:42Z">
         </test-method>
-        <test-method status="PASS" signature="setUpBrowser()" name="setUpBrowser" is-config="true" duration-ms="6915" started-at="2020-03-29T22:55:39Z" finished-at="2020-03-29T22:55:46Z">
-        </test-method>
-        <test-method status="FAIL" signature="facebookLoginTest(java.lang.String, java.lang.String)" name="facebookLoginTest" duration-ms="22427" started-at="2020-03-29T22:55:46Z" finished-at="2020-03-29T22:56:08Z">
+        <test-method status="FAIL" signature="facebookLoginTest(java.lang.String, java.lang.String)" name="facebookLoginTest" duration-ms="43575" started-at="2020-03-30T16:35:42Z" finished-at="2020-03-30T16:36:25Z">
           <params>
             <param index="0">
               <value>
@@ -35,7 +57,7 @@
 	at org.testng.Assert.assertEquals(Assert.java:118)
 	at org.testng.Assert.assertEquals(Assert.java:171)
 	at org.testng.Assert.assertEquals(Assert.java:181)
-	at com.Facebook.Pages.LoginPage.LoginFaceBook(LoginPage.java:67)
+	at com.Facebook.Pages.LoginPage.LoginFaceBook(LoginPage.java:60)
 	at com.Facebook.testCases.LoginTest.facebookLoginTest(LoginTest.java:16)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -59,14 +81,12 @@
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
 	at org.testng.TestNG.run(TestNG.java:999)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+	at com.Facebook.Utilities.testNGRunner.main(testNGRunner.java:21)
 ]]>
             </full-stacktrace>
           </exception>
         </test-method>
-        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)" name="tearDownMethod" is-config="true" duration-ms="409" started-at="2020-03-29T22:56:08Z" finished-at="2020-03-29T22:56:08Z">
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)" name="tearDownMethod" is-config="true" duration-ms="642" started-at="2020-03-30T16:36:25Z" finished-at="2020-03-30T16:36:26Z">
           <params>
             <param index="0">
               <value>
@@ -76,21 +96,21 @@
             </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="facebookLoginTest(java.lang.String, java.lang.String)" name="facebookLoginTest" duration-ms="16247" started-at="2020-03-29T22:56:08Z" finished-at="2020-03-29T22:56:25Z">
+        <test-method status="PASS" signature="facebookLoginTest(java.lang.String, java.lang.String)" name="facebookLoginTest" duration-ms="9417" started-at="2020-03-30T16:36:26Z" finished-at="2020-03-30T16:36:35Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[vishalrathi910@gmail.com]]>
+                <![CDATA[facebooktestingdemo@gmail.com]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[vishalisgood@725769725769]]>
+                <![CDATA[Test@1234]]>
               </value>
             </param>
           </params>
         </test-method>
-        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)" name="tearDownMethod" is-config="true" duration-ms="0" started-at="2020-03-29T22:56:25Z" finished-at="2020-03-29T22:56:25Z">
+        <test-method status="PASS" signature="tearDownMethod(org.testng.ITestResult)" name="tearDownMethod" is-config="true" duration-ms="0" started-at="2020-03-30T16:36:35Z" finished-at="2020-03-30T16:36:35Z">
           <params>
             <param index="0">
               <value>
@@ -99,6 +119,8 @@
               </value>
             </param>
           </params>
+        </test-method>
+        <test-method status="PASS" signature="closeBrowser()" name="closeBrowser" is-config="true" duration-ms="875" started-at="2020-03-30T16:36:35Z" finished-at="2020-03-30T16:36:36Z">
         </test-method>
       </class>
     </test>

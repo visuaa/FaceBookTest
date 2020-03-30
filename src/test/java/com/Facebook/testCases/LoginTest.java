@@ -7,7 +7,7 @@ import com.Facebook.Pages.LoginPage;
 
 public class LoginTest extends BaseClass {
 	
-	@Test(dataProvider="UserData")
+	@Test(dataProvider="UserData",priority = 1)
 	public void facebookLoginTest(String Username,String Password) {
 		
 		
